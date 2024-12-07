@@ -1,8 +1,8 @@
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
 function addTask() {
-    if (taskInput.value === '') {
-        alert("please write any task");
+    if (!taskInput.value) {
+        alert("please write any task!s");
     } else {
         let li = document.createElement("li");
         li.innerHTML = taskInput.value;
