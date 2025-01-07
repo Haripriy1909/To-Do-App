@@ -8,7 +8,8 @@ function addTask() {
         li.innerHTML = taskInput.value;
         taskList.appendChild(li);
         let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
+        span.innerHTML ="Delete";
+
         li.appendChild(span);
     }
     taskInput.value = '';
