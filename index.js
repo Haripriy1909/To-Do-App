@@ -18,6 +18,7 @@ function addTask() {
 
 taskList.addEventListener("click", function (e) {
     if (e.target.tagName === "LI") {
+      e.target.style.textDecoration = "line-through";
         e.target.clasList.toggle("checked");
     }
     else if (e.target.tagName = "SPAN") {
